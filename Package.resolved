@@ -1,0 +1,33 @@
+{
+  "originHash" : "b635fdc32bb533e0324b5c49d1f269c3d5ecf2270227f3e934ca9308705166ff",
+  "pins" : [
+    {
+      "identity" : "libindy",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/decentralised-dataexchange/LibIndy",
+      "state" : {
+        "revision" : "370538463c84ee6d81ebb989aea1eb238481374a",
+        "version" : "2025.8.3"
+      }
+    },
+    {
+      "identity" : "libsodium",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/decentralised-dataexchange/libsodium",
+      "state" : {
+        "revision" : "e884e930b6dde6ce6ab7ec6050c160671a54a5f8",
+        "version" : "2025.8.1"
+      }
+    },
+    {
+      "identity" : "libzmq",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/decentralised-dataexchange/libzmq",
+      "state" : {
+        "revision" : "2922659fd0e0bd638301f60fe795f555f42c83ac",
+        "version" : "2025.8.2"
+      }
+    }
+  ],
+  "version" : 3
+}
