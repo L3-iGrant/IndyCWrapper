@@ -16,26 +16,23 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/decentralised-dataexchange/LibIndy", from: "2025.8.3"),
+        .package(url: "https://github.com/decentralised-dataexchange/LibIndy", from: "2026.3.1"),
         .package(url: "https://github.com/decentralised-dataexchange/libzmq", from: "2025.8.2"),
+        .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", .upToNextMinor(from: "1.1.2300")),
     ],
-    
+
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "IndyCWrapper",
             dependencies: [
-                "OpenSSL-XM",
                 "LibIndy",
+                .product(name: "OpenSSL", package: "OpenSSL"),
                 .product(name: "libzmq", package: "libzmq"),
             ],
             path: "Sources/IndyCWrapper",
             publicHeadersPath: "Indy"
-        ),
-        .binaryTarget(
-            name: "OpenSSL-XM",
-            path: "Sources/IndyCWrapper/SupportLibraries/OpenSSL-XM.xcframework"
         ),
         .testTarget(
             name: "IndyCWrapperTests",
