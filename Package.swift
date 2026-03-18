@@ -17,7 +17,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/decentralised-dataexchange/LibIndy", from: "2026.3.1"),
-        .package(url: "https://github.com/decentralised-dataexchange/libzmq", from: "2025.8.2"),
+        .package(url: "https://github.com/decentralised-dataexchange/libzmq", from: "2025.8.3"),
         .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", .upToNextMinor(from: "1.1.2300")),
     ],
 
