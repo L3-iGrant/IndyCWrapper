@@ -1,4 +1,4 @@
-// swift-tools-version: 6.2
+// swift-tools-version: 6.1
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -17,7 +17,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/decentralised-dataexchange/LibIndy", from: "2026.3.1"),
-        .package(url: "https://github.com/decentralised-dataexchange/libzmq", from: "2025.3.1"),
+        .package(url: "https://github.com/decentralised-dataexchange/libzmq", from: "2026.3.1"),
         .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", .upToNextMinor(from: "1.1.2300")),
     ],
 
